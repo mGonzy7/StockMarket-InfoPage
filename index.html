@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Stock Market</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Stock Market</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+        <li>
+          <a class="nav-link" href="#Stocks">Stocks</a>
+          </li>
+        <li>
+          <a class="nav-link" href="#Dividends">Dividends</a>
+          </li>
+        <li>
+          <a class="nav-link" href="#Types_of_Investment_Accounts">Types of Investment Accounts</a>
+          </li>
+        <li>
+          <a class="nav-link" href="#Stock_Options">Stock Options</a>
+          </li>
+      </ul>  
+    </nav>           
+    <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      
+      <header>Introduction</header>
+
+      <article>
+
+      <p>The stock market is a place where investors buy and sell shares of publicly traded companies. It operates through exchanges like the New York Stock Exchange (NYSE) and Nasdaq, allowing companies to raise capital and investors to own a piece of businesses.</p>
+      <p>Stock prices fluctuate based on supply and demand, company earnings, economic conditions, and investor sentiment. If more people want to buy a stock than sell it, the price goes up—and if more people sell than buy, the price goes down.</p>
+
+      <div class="funfact">
+
+      <legend class="text-box">Fun Fact!</legend>
+      <ul>
+        <li class="text-box-1">Shortest Trading Halt – In 2020, trading was paused for just 15 minutes due to a massive market drop caused by COVID-19 panic.</li>
+      </ul>
+
+      </div>
+      
+      <legend>Quick programming fact!</legend>
+      <h3>You can use Python’s yfinance library to retrieve stock market data:</h3>
+        <code>import yfinance as yf
+data = yf.Ticker("AAPL").history(period="1d")  # Get Apple's latest stock price</code>
+      <h4>This line shows how to fetch real-time stock prices, making the stock market more interactive for the reader.</h4>
+     
+      </article>
+    </section>
+    
+    <section class="main-section" id="Stocks">
+     
+      <header>Stocks</header>
+      
+      <article>
+      <p>Stocks Represent Ownership in a Company – When you buy a stock, you become a shareholder, meaning you own a fraction of that company. This ownership gives you potential benefits such as price appreciation, dividends (if offered), and even voting rights in shareholder meetings for some stocks. Your investment grows as the company becomes more valuable.</p>
+      <p>Stocks Offer Growth Potential but Come with Risk – Stocks have historically provided higher long-term returns compared to other investments like bonds or savings accounts. However, they are subject to market volatility, meaning their prices can rise and fall based on company performance, economic conditions, and investor sentiment. Successful investing often requires patience and a long-term perspective.</p>
+
+      <div class="funfact2">
+
+        <legend class="text-box">Fun Fact!!</legend>
+
+        <ul>
+
+        <li class="text-box-1">The largest stock exchange in the world by market capitalization is the New York Stock Exchange (NYSE), with a total value of over $25 trillion!</li>
+      </ul> 
+      </div>
+
+      <legend>Quick programming fact!</legend>
+
+      <h3>A simple Python formula to calculate profit from a stock investment:<h3>
+        <code>profit = (sell_price - buy_price) * shares_owned</code>
+      <h4>This snippet helps investors understand how their profits are calculated when buying and selling stocks.</h4>   
+      </article>
+    </section>
+    <section class="main-section" id="Dividends">
+      <header>Dividends</header>
+      <article>
+        <p>Dividends Provide Passive Income to Investors – Some companies share their profits with shareholders through dividends, typically paid quarterly. Investors who focus on dividend-paying stocks can generate a steady income stream, which is especially useful for retirees or those looking for reliable cash flow.</p>
+        <p>Dividend Growth Stocks Can Lead to Compounding Wealth – Some companies not only pay dividends but also increase them annually. These are known as dividend growth stocks. Reinvesting dividends allows investors to buy more shares, leading to a compounding effect where future dividends grow even larger. This strategy can significantly boost wealth over time.</p>
+
+        <div class="funfact3">
+        <legend class="text-box">Fun Fact!</legend>
+        <ul>
+          <li class="text-box-1">Johnson & Johnson has increased its dividend for over 60 consecutive years, making it one of the most reliable dividend stocks in history!</li>
+        </ul>
+        </div>
+        <legend>Quick programming fact!</legend>
+        <h3>A formula to calculate the dividend yield, an important metric for dividend investors:</h3>
+        <code>dividend_yield = (annual_dividend / stock_price) * 100</code> 
+        <h4>This line helps explain how much return an investor is getting from dividends relative to stock price.</h4> 
+        </article>
+      </section>
+    <section class="main-section" id="Types_of_Investment_Accounts">
+      <header>Types of Investment Accounts</header>
+      <article>
+        <p>Tax-Advantaged Investment Accounts Can Boost Long-Term Wealth – Accounts like 401(k)s, IRAs, and Roth IRAs offer tax benefits that help investors grow their money faster. A 401(k) allows contributions to be made pre-tax, reducing taxable income, while a Roth IRA grows tax-free, meaning you don’t pay taxes when withdrawing money in retirement. These accounts encourage long-term investing.</p>
+        <p>Brokerage Accounts Offer Flexibility but Come with Taxes – Unlike retirement accounts, a regular brokerage account lets you invest freely in stocks, ETFs, mutual funds, and options without penalties for withdrawals. However, any profits (capital gains) are taxable, and you may also pay taxes on dividends received. Despite this, brokerage accounts provide full access to your money without waiting until retirement.</p>
+
+      <div class="funfact4">
+
+        <legend class="text-box">Fun Fact!</legend>
+        <ul>
+          <li class="text-box-1">If you max out your Roth IRA every year from age 18 to 65 (assuming an 8% return), you could accumulate over $5 million—and it would be 100% tax-free!</li>
+        </ul> 
+      </div>  
+
+        <legend>Quick programming fact!</legend>
+
+        <h3>A simple conditional statement to decide between a Roth IRA or 401(k) based on tax preferences:<h3>
+          <code>account = "Roth IRA" if prefers_tax_free_withdrawals else "401(k)"</code>
+        <h4>This demonstrates how investors choose the right account based on tax benefits.</h4>  
+        </article> 
+    </section>
+    <section class="main-section" id="Stock_Options">
+      <header>Stock Options</header>
+      <article>
+        <p>Call and Put Options Provide Strategic Investment Opportunities – A call option gives an investor the right (but not the obligation) to buy a stock at a predetermined price before a set expiration date, while a put option gives the right to sell. Options are often used to hedge risks, generate income, or make speculative trades on stock movements.</p>
+        <p>Options Have an Expiration Date and Can Become Worthless – Unlike stocks, options contracts expire on a set date. If the market price of the underlying stock doesn’t move in the anticipated direction before expiration, the option can become worthless, resulting in a total loss of the premium paid. This makes options riskier than traditional stock investing, but they also offer potential for higher rewards when used correctly.</p>
+
+      <div class="funfact5">
+
+        <legend class="text-box">Fun Fact!</legend>
+        <ul>
+          <li class="text-box-1">High Risk, High Reward – Options amplify stock movements, meaning a 10% stock move can cause a 100%+ option move—both exciting and risky!</li>
+        </ul> 
+        </div>
+
+        <legend>Quick programming fact!</legend>
+
+        <h3>A simple formula to calculate the payoff of a call option:<h3>
+          <code>call_option_payoff = max(stock_price - strike_price, 0)</code>
+        <h4>This line explains how stock options work and why they can expire worthless if the stock price doesn’t rise above the strike price.</h4>
+        </article>
+    </section>
+    <footer>
+      <p>If you want to learn more about the Stock Market, please visit this 
+        <a id="Stock-market-link" href="https://en.wikipedia.org/wiki/Stock_market" target="_blank">Wikipedia entry</a>
+      </p>
+      </footer>
+    </main>
+  </body>  
+  </html>
