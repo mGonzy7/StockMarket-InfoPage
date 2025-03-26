@@ -1,0 +1,272 @@
+body {
+  display: block;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+}
+
+nav {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+nav header {
+  font-size: 40px;
+  text-align: center;
+}
+
+.nav-link {
+  font-size: 2rem;
+}
+
+#main-doc {
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+main {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+header {
+  display: block;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+#navbar li {
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto, 0;
+
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; } /* Start on the Left */
+  50% { background-position: 100% 50%; } /* Move to the right */
+  100% { background-position: 0% 50%; } /* Move back to the left */
+}
+
+section header {
+  display: block;
+
+  background: linear-gradient(270deg, rgb(37, 126, 151), rgb(40, 164, 189), rgb(26, 90, 108)); /* linear-gradient(270deg, ...) → This makes a smooth blend of colors from left to right. */
+
+  background-size: 200% 200%; /* 200% size → Makes the background extra big so we can move it without seeing the edges. */
+
+  animation: gradientAnimation 10s ease infinite; /* 5s → Takes 5 seconds to go from left to right.
+
+ease → Makes the movement smooth (not too fast or slow).
+
+infinite → Keeps moving forever! */
+
+color: white;
+padding: 10px
+}
+
+
+#main-doc header{
+  text-align: left;
+  margin: 0px;
+}
+
+header {
+  font-size: 40px;
+}
+
+section article {
+  font-size: 20px;
+}
+
+legend {
+  font-size: 25px;
+  text-align: center;
+  font-family: cursive;
+}
+
+article ul {
+  list-style-type: none;
+}
+
+article ul li {
+  display: block;
+  padding: 10px; /* Fun fact paragraph */
+  margin: auto;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+code {
+  font-size: 18px;
+  background-color: rgb(248, 237, 198);
+  display: block;
+  padding: 15px;
+  margin: auto;
+}
+
+h4 {
+  font-size: 22px;
+  font-style: italic;
+}
+
+
+.text-box { /* Fun Fact */
+  display: block;
+  background-color: black;
+  color: white;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.text-box-1 {
+  background-color: rgb(0, 0, 0, 0.85);
+  color: white;
+  margin-right: 40px;
+  max-width: 800px;
+  max-height: 100px;
+  word-wrap: break-word; /* Prevents text from overflowing */
+  overflow-wrap: break-word; /* Ensures text wraps properly */
+  text-align: center;
+  text-overflow: ellipsis; /* Adds "..." to cut-off text */
+  overflow: hidden; /* Hides extra text */
+}
+
+.funfact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center;
+  width: 90%; /* Adjust as needed to prevent it from being too wide */
+  max-width: 1200px; /* Prevents it from stretching too far on big screens */
+  margin: 0 auto; /* Centers the div */
+  background-image: url(https://images.barrons.com/im-112363/social);
+  background-size: cover;
+  background-position: center;
+}
+
+.funfact2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center;
+  width: 90%; /* Adjust as needed to prevent it from being too wide */
+  max-width: 1200px; /* Prevents it from stretching too far on big screens */
+  margin: 0 auto; /* Centers the div */
+  background-image: url(https://wp.stocktwits.com/wp-content/uploads/sites/2/2022/05/23164132/Finviz-Heat-Map-05-23-2022-1280x714.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.funfact3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center;
+  width: 90%; /* Adjust as needed to prevent it from being too wide */
+  max-width: 1200px; /* Prevents it from stretching too far on big screens */
+  margin: 0 auto; /* Centers the div */
+  background-image: url(https://data.cbonds.info//files/glossary/202401/mceu_46452822011705948161485.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.funfact4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center;
+  width: 90%; /* Adjust as needed to prevent it from being too wide */
+  max-width: 1200px; /* Prevents it from stretching too far on big screens */
+  margin: 0 auto; /* Centers the div */
+  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20240407200519/Types-of-Investment-Accounts-copy.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.funfact5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center;
+  width: 90%; /* Adjust as needed to prevent it from being too wide */
+  max-width: 1200px; /* Prevents it from stretching too far on big screens */
+  margin: 0 auto; /* Centers the div */
+  background-image: url(https://wallstreetmojocms.recurpro.in/uploads/Stock_Options_4c201369ec.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 650px) {
+  .text-box-1 {
+    max-width: 100%; /* Ensures the text box fits within smaller screens */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Adds "..." when text is cut off */
+    padding: 10px; /* Adjust padding for better fit */
+  }
+
+  .funfact, .funfact2, .funfact3, .funfact4, .funfact5 {
+    width: 100%; /* Make sure they fit within the screen */
+    max-width: 100%;
+  }
+
+  #navbar {
+    width: 100%; /* Make the navbar full width for smaller screens */
+    position: relative; /* Allow it to adjust normally */
+    height: auto;
+    border-right: none;
+  }
+
+  #main-doc {
+    margin-left: 0; /* Remove margin to fit content properly */
+    padding: 10px;
+  }
+
+  header {
+    font-size: 30px; /* Reduce header size for smaller screens */
+  }
+}
